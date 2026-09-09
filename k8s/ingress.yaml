@@ -45,7 +45,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: wardrobe.example.com
+    - host: wardrobe.local
       http:
         paths:
           - path: /
