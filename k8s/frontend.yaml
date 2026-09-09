@@ -68,6 +68,11 @@ spec:
                   optional: true
             - name: NODE_TLS_REJECT_UNAUTHORIZED
               value: "0"
+            - name: DEV_MODE
+              valueFrom:
+                configMapKeyRef:
+                  name: wardrobe-config
+                  key: DEV_MODE
           resources:
             requests:
               memory: "128Mi"
