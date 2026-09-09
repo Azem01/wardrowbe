@@ -6,18 +6,13 @@ metadata:
   name: wardrobe-ingress
   namespace: wardrobe
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.tls: "true"
     traefik.ingress.kubernetes.io/router.middlewares: wardrobe-security-headers@kubernetescrd
 spec:
   ingressClassName: traefik
-  tls:
-    - hosts:
-        - wardrobe.example.com
-      secretName: wardrobe-tls
   rules:
-    - host: wardrobe.example.com
+    - host: wardrobe.local
       http:
         paths:
           # API routes go to backend
