@@ -211,11 +211,7 @@ spec:
                   name: wardrobe-notifications
                   key: smtp-password
                   optional: true
-            - name: DEBUG
-                valueFrom:
-                  configMapKeyRef:
-                    name: wardrobe-config
-                    key: DEBUG
+
           volumeMounts:
             - name: uploads
               mountPath: /data/uploads
