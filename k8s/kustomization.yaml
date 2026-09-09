@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: wardrobe
 
 resources:
+  - ingress.yaml
   - namespace.yaml
   - configmap.yaml
   - postgres.yaml
