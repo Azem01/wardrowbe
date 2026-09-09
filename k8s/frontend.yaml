@@ -45,11 +45,11 @@ spec:
                   key: nextauth-secret
             - name: BACKEND_URL
               value: "http://backend:8000"
-            - name: DEBUG
+            - name: DEV_MODE
               valueFrom:
                 configMapKeyRef:
                   name: wardrobe-config
-                  key: DEBUG
+                  key: DEV_MODE
             - name: OIDC_ISSUER_URL
               valueFrom:
                 configMapKeyRef:
