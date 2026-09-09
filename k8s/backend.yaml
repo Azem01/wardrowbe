@@ -198,11 +198,11 @@ spec:
                   name: wardrobe-config
                   key: SMTP_FROM_EMAIL
                   optional: true
-            - name: DEV_MODE
+            - name: DEBUG
               valueFrom:
                 configMapKeyRef:
                   name: wardrobe-config
-                  key: DEV_MODE
+                  key: DEBUG
             - name: SMTP_USER
               valueFrom:
                 secretKeyRef:
