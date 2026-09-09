@@ -9,8 +9,8 @@ data:
   POSTGRES_DB: "wardrobe"
 
   # URLs - Update these to match your domain
-  APP_URL: "https://192.168.178.32:30300"
-  NEXTAUTH_URL: "https://192.168.178.32:30300"
+  APP_URL: "http://wardrobe.local"
+  NEXTAUTH_URL: "http://wardrobe.local"
 
   # OIDC Provider URL (Authentik, Pocket ID, Keycloak, etc.)
   OIDC_ISSUER_URL: ""
