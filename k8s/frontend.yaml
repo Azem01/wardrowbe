@@ -97,10 +97,8 @@ metadata:
   name: frontend
   namespace: wardrobe
 spec:
-  type: NodePort
   selector:
     app: frontend
   ports:
     - port: 3000
       targetPort: 3000
-      nodePort: 30300
