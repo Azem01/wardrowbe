@@ -198,7 +198,11 @@ spec:
                   name: wardrobe-config
                   key: SMTP_FROM_EMAIL
                   optional: true
-                        - name: DEBUG
+            - name: DEBUG
+              valueFrom:
+                configMapKeyRef:
+                  name: wardrobe-config
+                  key: DEBUG
             - name: SMTP_USER
               valueFrom:
                 secretKeyRef:
@@ -211,7 +215,6 @@ spec:
                   name: wardrobe-notifications
                   key: smtp-password
                   optional: true
-
           volumeMounts:
             - name: uploads
               mountPath: /data/uploads
