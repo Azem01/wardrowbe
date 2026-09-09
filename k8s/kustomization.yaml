@@ -12,7 +12,6 @@ resources:
   - worker.yaml
   - image-worker.yaml
   - frontend.yaml
-  - ingress.yaml
   - network-policy.yaml
 
 # Secrets should be applied separately (not tracked in git)

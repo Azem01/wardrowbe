@@ -34,7 +34,7 @@ spec:
         fsGroup: 1000
       containers:
         - name: backend
-          image: wardrobe/backend:latest
+          image: ghcr.io/anyesh/wardrowbe:backend-latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
@@ -198,6 +198,7 @@ spec:
                   name: wardrobe-config
                   key: SMTP_FROM_EMAIL
                   optional: true
+                        - name: DEBUG
             - name: SMTP_USER
               valueFrom:
                 secretKeyRef:
@@ -210,6 +211,11 @@ spec:
                   name: wardrobe-notifications
                   key: smtp-password
                   optional: true
+            - name: DEBUG
+                valueFrom:
+                  configMapKeyRef:
+                    name: wardrobe-config
+                    key: DEBUG
           volumeMounts:
             - name: uploads
               mountPath: /data/uploads

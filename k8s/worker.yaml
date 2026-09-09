@@ -20,7 +20,7 @@ spec:
         fsGroup: 1000
       containers:
         - name: worker
-          image: wardrobe/backend:latest
+          image: ghcr.io/anyesh/wardrowbe:backend-latest
           imagePullPolicy: IfNotPresent
           securityContext:
             runAsNonRoot: true
