@@ -21,9 +21,9 @@ data:
   DEV_MODE: "true"
   # AI Configuration
   # Use any OpenAI-compatible API (OpenAI, Ollama, LocalAI, etc.)
-  AI_BASE_URL: "https://api.openai.com/v1"
-  AI_VISION_MODEL: "gpt-4o"
-  AI_TEXT_MODEL: "gpt-4o"
+  AI_BASE_URL: http://192.168.178.23:8080/v1
+  AI_VISION_MODEL: "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q2_K_P.gguf"
+  AI_TEXT_MODEL: "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q2_K_P.gguf"
   AI_TIMEOUT: "120"
   AI_MAX_RETRIES: "3"
   # Reasoning effort for thinking-capable models. "none" because a thinking model
