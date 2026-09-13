@@ -9,6 +9,11 @@ spec:
   resources:
     requests:
       storage: 1Gi
+      memory: "256Mi"
+      cpu: "250m"
+    limits:
+      memory: "768Mi"
+      cpu: "1000m"
   storageClassName: local-path
 
 ---
