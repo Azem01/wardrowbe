@@ -81,6 +81,14 @@ spec:
                 - wardrobe
             initialDelaySeconds: 5
             periodSeconds: 5
+          startupProbe:
+            exec:
+              command:
+                - pg_isready
+                - -U
+                - wardrobe
+            periodSeconds: 5
+            failureThreshold: 60
       volumes:
         - name: postgres-data
           persistentVolumeClaim:
