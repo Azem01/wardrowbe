@@ -22,8 +22,8 @@ data:
   # AI Configuration
   # Use any OpenAI-compatible API (OpenAI, Ollama, LocalAI, etc.)
   AI_BASE_URL: http://192.168.178.23:9931/v1
-  AI_VISION_MODEL: "C:\Users\romeo\Desktop\llama.cpp\models\gemma4_12b\gemma-4-12b-it-Q4_0.gguf"
-  AI_TEXT_MODEL: "C:\Users\romeo\Desktop\llama.cpp\models\gemma4_12b\gemma-4-12b-it-Q4_0.gguf"
+  AI_VISION_MODEL: "C:\\Users\\romeo\\Desktop\\llama.cpp\\models\\gemma4_12b\\gemma-4-12b-it-Q4_0.gguf"
+  AI_TEXT_MODEL: "C:\\Users\\romeo\\Desktop\\llama.cpp\\models\\gemma4_12b\\gemma-4-12b-it-Q4_0.gguf"
   AI_TIMEOUT: "120"
   AI_MAX_RETRIES: "3"
   # Reasoning effort for thinking-capable models. "none" because a thinking model
